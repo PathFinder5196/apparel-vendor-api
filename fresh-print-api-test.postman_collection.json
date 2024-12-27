@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "250c4326-b000-40b0-8d7a-fdc167ebe3a3",
+		"name": "fresh-print-api-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40677857"
+	},
+	"item": [
+		{
+			"name": "Update Single Stock",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\": \"SHIRT001\",\n    \"size\": \"L\",\n    \"quantity\": 10,\n    \"price\": 29.99\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/apparel/stock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"apparel",
+						"stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Bulk Stock",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"code\": \"SHIRT001\",\n        \"size\": \"M\",\n        \"quantity\": 15,\n        \"price\": 29.99\n    },\n    {\n        \"code\": \"PANT001\",\n        \"size\": \"L\",\n        \"quantity\": 8,\n        \"price\": 49.99\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/apparel/stock/bulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"apparel",
+						"stock",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Order Fulfillment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\": [\n        {\n            \"code\": \"SHIRT001\",\n            \"size\": \"L\",\n            \"quantity\": 2\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/apparel/order/check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"apparel",
+						"order",
+						"check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate Order Cost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\": [\n        {\n            \"code\": \"SHIRT001\",\n            \"size\": \"L\",\n            \"quantity\": 2\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/apparel/order/cost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"apparel",
+						"order",
+						"cost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Apparel Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/apparel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"apparel"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
