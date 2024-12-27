@@ -1,0 +1,27 @@
+[
+  {
+    "code": "SHIRT001",
+    "stocks": [
+      {
+        "size": "L",
+        "quantity": 10,
+        "price": 29.99
+      },
+      {
+        "size": "M",
+        "quantity": 15,
+        "price": 29.99
+      }
+    ]
+  },
+  {
+    "code": "PANT001",
+    "stocks": [
+      {
+        "size": "L",
+        "quantity": 8,
+        "price": 49.99
+      }
+    ]
+  }
+]
