@@ -27,7 +27,7 @@ A REST API service built with Node.js and TypeScript for managing apparel invent
 
 1. Clone the repository:
 ```bash
-git clone 
+git clone https://github.com/PathFinder5196/apparel-vendor-api.git
 cd apparel-vendor-api
 ```
 
